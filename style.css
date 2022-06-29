@@ -230,14 +230,22 @@ span {
 }
 
 /* Avatar  */
-.avatar {
+/* .avatar { */
+    /* cursor: pointer; */
+    /* position: absolute; */
+    /* top: 50px; */
+    /* left: calc(50% - 100px); */
+/* } */
+
+.avata {
     cursor: pointer;
     position: absolute;
-    top: 50px;
+    /* top: 50px; */
     left: calc(50% - 100px);
+    margin-top: 330px;
 }
 
-.avatar__img {
+.avata__img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -252,9 +260,9 @@ span {
     margin-right: auto;
 }
 
-.avatar__title {
+.avata__title {
     cursor: pointer;
-    /* margin-top: -100px; */
+    margin-top: -10px;
     -webkit-animation: balloon1 4s ease-in-out infinite;
     -moz-animation: balloon1 4s ease-in-out infinite;
     -o-animation: balloon1 4s ease-in-out infinite;
