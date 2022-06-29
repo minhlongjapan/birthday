@@ -15,6 +15,7 @@
         <link rel="shortcut icon" type="image/png" href="birthdayCake.png"/>
         <title>Happy Birthday</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./gamestyles.css">
         <script>
             window.open = function () {};
             window.print = function () {};
@@ -44,11 +45,6 @@
 
             </div>
             <div class="container">
-                <audio id="player" autoplay controls loop>
-                    <source src="./music.mp3" type="audio/mp3">
-                </audio>
-                <!-- 2. Dòng chữ Happy Birthday
-                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
                 <div class="balloon">
                     <div><span>H</span></div>
                     <div><span>A</span></div>
@@ -64,28 +60,35 @@
                     <div><span>A</span></div>
                     <div><span>Y</span></div>
                 </div>
-                <div class="avatar">
-                    <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
-                    <img src="MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-                    <!-- 4. Tên của người đó -->
-                    <h1 onclick="showMessage()" class="avatar__title">Bích Ngọc</h1>
+
+                
+                <div class="avata">
+                    <img src="MyAvatar.jpg" alt="" class="avata__img" onclick="showMessage()" />
+                    <h1 onclick="showMessage()" class="avata__title">Bích Ngọc</h1>
                 </div>
                 
-                <!-- 5. Phần nhạc -->
-                <!-- <audio id="player" autoplay controls loop>
-                    <source src="./music.mp3" type="audio/mp3">
-                </audio> -->
+                <main></main>
+                <div id="spin">BAM VAO DAY DE NHAN QUA</div>
+                <div>
+                    <audio id="playe" autoplay controls loop>
+                        <source src="./music.mp3" type="audio/mp3">
+                    </audio>
+                </div>
             </div>
         </div>
+        
+
+
+
+
         <script>
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
             }
             function showMessage() {
-                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
-                    title: "Lời nhắn", // Tiêu đề của popup
-                    text: "Gửi đến tôi, chàng trai năm 20 tuổi, hãy biết cố gắng thật nhiều để sau này không hối hận, hãy biết yêu thương bản thân để luôn có sức khỏe khỏe mạnh, hãy biết hiếu thuận gia đình để bố mẹ không bao giờ buồn, và cũng hãy đi tìm nàng công chúa của mình đi nào.", // Nội dung lời nhắn
+                    title: "Chuc Mung Sinh Nhat Bich Ngoc", // Tiêu đề của popup
+                    text: "Chuc em sinh nhat vui ve, luon xinh tuoi, khoe manh, hanh phuc, gap nhieu may man va thanh cong trong tuoi moi!",
                     button: {
                         text: "❤️️",
                     },
@@ -94,4 +97,7 @@
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
+    
+
+        <script src="main.js"></script>
 </html>
